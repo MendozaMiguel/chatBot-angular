@@ -2,10 +2,19 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "../out-tsc/app",
-    "types": []
+    "module": "es2015",
+    "types": [],
+    "forceConsistentCasingInFileNames": false
   },
   "exclude": [
     "test.ts",
     "**/*.spec.ts"
-  ]
+  ],
+  "include": [
+    "../node_modules/angular-ai-chat-bot/*.ts",
+     "../node_modules/angular-ai-chat-bot/**/*.ts",
+     "main.ts",
+      "polyfills.ts"
+    ],
+  // "files": ["./app/app.module.ts"],
 }

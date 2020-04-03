@@ -5,18 +5,25 @@
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
-    "module": "es2015",
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "importHelpers": true,
-    "target": "es5",
+    "forceConsistentCasingInFileNames": false,
     "typeRoots": [
-      "node_modules/@types"
+      "./node_modules/@types"
     ],
-    "lib": [
-      "es2018",
-      "dom"
-    ]
-  }
+    "lib": ["es5", "es2017", "dom"],
+    "target": "ES5",
+    "paths": {
+      "@angular/*": [
+        "./node_modules/@angular/*"
+      ]
+    }
+  },
+  "include": [
+    "./node_modules/angular-ai-chat-bot/*.ts",
+     "./node_modules/angular-ai-chat-bot/**/*.ts",
+     "./src/main.ts",
+      "./src/polyfills.ts"
+    ],
 }
