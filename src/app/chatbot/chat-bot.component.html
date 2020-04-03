@@ -1,14 +1,11 @@
 <div>
     THIS CHAT BOT SECTION
     <Chat-bot class="chat-window"
-    [token]="accessToken"
-    [msg]="msg"
-    [msgTemplate]='message'
-    [inputTemplate]='input'>
-<ng-template #window>
-</ng-template>
-</Chat-bot>
+        [token]="accessToken"
+        [msg]="msg">
+        <ng-template #window>
+        </ng-template>
+    </Chat-bot>
 
-
-<input (change)="onChange($event.target);">
+<!-- <input (change)="onChange($event.target);"> -->
 </div>
