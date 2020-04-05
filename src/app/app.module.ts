@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { MatCardModule } from '@angular/material/card';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatInputModule,
-    MatCardModule
+    MatCardModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

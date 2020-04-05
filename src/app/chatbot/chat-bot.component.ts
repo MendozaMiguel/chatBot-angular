@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 import { ChatBot } from 'angular-ai-chat-bot';
 import { Subject } from 'rxjs';
@@ -9,7 +9,7 @@ import { Subject } from 'rxjs';
   styleUrls: ['./chat-bot.component.css']
 })
 export class WrapperChatBotComponent implements OnInit {
-  public accessToken = '0146bb6bc73f4ef4bbf44e82aa6af957';
+  public accessToken = 'e95bf3cbc13b4c688cf8bde94ac35c95';
   public msg =  new Subject<any>();
   constructor() {}
 
@@ -18,5 +18,5 @@ export class WrapperChatBotComponent implements OnInit {
 
   public onChange(message: string) {
     this.msg.next(message);
-}
+  }
 }

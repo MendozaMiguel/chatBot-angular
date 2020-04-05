@@ -1,4 +1,18 @@
-
 <router-outlet></router-outlet>
+<div class="page">
+  PAGE !
+  <div class="contenu">
+    CONTENU
+    <div>
+      <app-chat-bot *ngIf="openBot" class="main-chat-bot"></app-chat-bot>
+    </div>
 
-<app-chat-bot></app-chat-bot>
+  </div>
+  <div class="contenu">
+    CONTENU
+    {{ openBot }}
+  </div>
+  <div class="button-chat-bot" (click)="openBot= !openBot">
+    <mat-icon class="size-icon">adb</mat-icon>
+  </div>
+</div>
